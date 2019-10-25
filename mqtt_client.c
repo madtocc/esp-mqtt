@@ -1413,3 +1413,7 @@ esp_err_t esp_mqtt_client_register_event(esp_mqtt_client_handle_t client, esp_mq
     return ESP_FAIL;
 #endif
 }
+
+int8_t esp_mqtt_get_connection_state(esp_mqtt_client_handle_t client){
+    return client->state;
+}

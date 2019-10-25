@@ -306,6 +306,7 @@ esp_err_t esp_mqtt_set_config(esp_mqtt_client_handle_t client, const esp_mqtt_cl
  *         ESP_OK on success
  */
 esp_err_t esp_mqtt_client_register_event(esp_mqtt_client_handle_t client, esp_mqtt_event_id_t event, esp_event_handler_t event_handler, void* event_handler_arg);
+int8_t esp_mqtt_get_connection_state(esp_mqtt_client_handle_t client);
 
 #ifdef __cplusplus
 }
